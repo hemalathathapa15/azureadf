@@ -15,6 +15,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
 		},
+		"HttpServer_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'HttpServer'"
+		},
 		"github_credential": {
 			"type": "secureString",
 			"metadata": "Secure string for 'credential' of 'github'"
@@ -28,6 +32,14 @@
 			"defaultValue": "sample"
 		},
 		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "himani"
+		},
+		"HttpServer_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://jsonplaceholder.typicode.com/users"
+		},
+		"HttpServer_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "himani"
 		},
@@ -68,6 +80,9 @@
 					"AzureSqlDatabase1_password": {
 						"value": "[parameters('AzureSqlDatabase1_password')]"
 					},
+					"HttpServer_password": {
+						"value": "[parameters('HttpServer_password')]"
+					},
 					"github_credential": {
 						"value": "[parameters('github_credential')]"
 					},
@@ -79,6 +94,12 @@
 					},
 					"AzureSqlDatabase1_properties_typeProperties_userName": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
+					},
+					"HttpServer_properties_typeProperties_url": {
+						"value": "[parameters('HttpServer_properties_typeProperties_url')]"
+					},
+					"HttpServer_properties_typeProperties_userName": {
+						"value": "[parameters('HttpServer_properties_typeProperties_userName')]"
 					},
 					"github_properties_typeProperties_username": {
 						"value": "[parameters('github_properties_typeProperties_username')]"

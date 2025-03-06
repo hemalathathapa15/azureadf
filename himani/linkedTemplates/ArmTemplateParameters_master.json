@@ -11,6 +11,9 @@
 		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
+		"HttpServer_password": {
+			"value": ""
+		},
 		"github_credential": {
 			"value": ""
 		},
@@ -21,6 +24,12 @@
 			"value": "sample"
 		},
 		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "himani"
+		},
+		"HttpServer_properties_typeProperties_url": {
+			"value": "https://jsonplaceholder.typicode.com/users"
+		},
+		"HttpServer_properties_typeProperties_userName": {
 			"value": "himani"
 		},
 		"github_properties_typeProperties_username": {
