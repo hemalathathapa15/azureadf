@@ -23,6 +23,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'credential' of 'github'"
 		},
+		"onpremiseconnector_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'onpremiseconnector'"
+		},
+		"snowflake_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'snowflake'"
+		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "sampledatabase15.database.windows.net"
@@ -46,6 +54,30 @@
 		"github_properties_typeProperties_username": {
 			"type": "string",
 			"defaultValue": "hemalathathapa15"
+		},
+		"linkedserviceforstaging_sasUri": {
+			"type": "secureString",
+			"metadata": "Secure string for 'sasUri' of 'linkedserviceforstaging'"
+		},
+		"onpremiseconnector_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "DESKTOP-JJKP090\\MSSQLSERVER01"
+		},
+		"onpremiseconnector_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "dataproject"
+		},
+		"onpremiseconnector_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "AzureAD\\HemalathaThapa"
+		},
+		"snowflake_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "dataproject"
+		},
+		"linkedservicestaging_sasUri": {
+			"type": "secureString",
+			"metadata": "Secure string for 'sasUri' of 'linkedservicestaging'"
 		},
 		"containerUri": {
 			"type": "string",
@@ -86,6 +118,9 @@
 					"github_credential": {
 						"value": "[parameters('github_credential')]"
 					},
+					"snowflake_password": {
+						"value": "[parameters('snowflake_password')]"
+					},
 					"AzureSqlDatabase1_properties_typeProperties_server": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
 					},
@@ -103,6 +138,15 @@
 					},
 					"github_properties_typeProperties_username": {
 						"value": "[parameters('github_properties_typeProperties_username')]"
+					},
+					"linkedserviceforstaging_sasUri": {
+						"value": "[parameters('linkedserviceforstaging_sasUri')]"
+					},
+					"snowflake_properties_typeProperties_database": {
+						"value": "[parameters('snowflake_properties_typeProperties_database')]"
+					},
+					"linkedservicestaging_sasUri": {
+						"value": "[parameters('linkedservicestaging_sasUri')]"
 					}
 				}
 			},
@@ -121,6 +165,18 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"onpremiseconnector_password": {
+						"value": "[parameters('onpremiseconnector_password')]"
+					},
+					"onpremiseconnector_properties_typeProperties_server": {
+						"value": "[parameters('onpremiseconnector_properties_typeProperties_server')]"
+					},
+					"onpremiseconnector_properties_typeProperties_database": {
+						"value": "[parameters('onpremiseconnector_properties_typeProperties_database')]"
+					},
+					"onpremiseconnector_properties_typeProperties_userName": {
+						"value": "[parameters('onpremiseconnector_properties_typeProperties_userName')]"
 					}
 				}
 			},

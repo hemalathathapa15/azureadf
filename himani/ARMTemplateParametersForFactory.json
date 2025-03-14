@@ -17,6 +17,12 @@
 		"github_credential": {
 			"value": ""
 		},
+		"onpremiseconnector_password": {
+			"value": ""
+		},
+		"snowflake_password": {
+			"value": ""
+		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"value": "sampledatabase15.database.windows.net"
 		},
@@ -34,6 +40,24 @@
 		},
 		"github_properties_typeProperties_username": {
 			"value": "hemalathathapa15"
+		},
+		"linkedserviceforstaging_sasUri": {
+			"value": ""
+		},
+		"onpremiseconnector_properties_typeProperties_server": {
+			"value": "DESKTOP-JJKP090\\MSSQLSERVER01"
+		},
+		"onpremiseconnector_properties_typeProperties_database": {
+			"value": "dataproject"
+		},
+		"onpremiseconnector_properties_typeProperties_userName": {
+			"value": "AzureAD\\HemalathaThapa"
+		},
+		"snowflake_properties_typeProperties_database": {
+			"value": "dataproject"
+		},
+		"linkedservicestaging_sasUri": {
+			"value": ""
 		}
 	}
 }
